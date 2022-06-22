@@ -1,0 +1,42 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "CreatorBalanceChecker",
+  "sourceName": "contracts/CreatorBalanceChecker.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "getCreatorBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCreatorDotBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163160018190555061011b8061009e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063a4325485146037578063f363441f146051575b600080fd5b603d606b565b6040516048919060c2565b60405180910390f35b60576075565b6040516062919060c2565b60405180910390f35b6000600154905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1631905090565b60bc8160db565b82525050565b600060208201905060d5600083018460b5565b92915050565b600081905091905056fea2646970667358221220ea62ba9df060384985eae6bfe5fb056d0106e5ea707a5b0ef79febba09e5c62e64736f6c63430008040033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063a4325485146037578063f363441f146051575b600080fd5b603d606b565b6040516048919060c2565b60405180910390f35b60576075565b6040516062919060c2565b60405180910390f35b6000600154905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1631905090565b60bc8160db565b82525050565b600060208201905060d5600083018460b5565b92915050565b600081905091905056fea2646970667358221220ea62ba9df060384985eae6bfe5fb056d0106e5ea707a5b0ef79febba09e5c62e64736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

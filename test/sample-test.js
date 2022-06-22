@@ -1,5 +1,6 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
+// const { describe } = require("yargs");
 
 describe("Greeter", function () {
   it("Should return the new greeting once it's changed", async function () {
@@ -28,5 +29,19 @@ describe("BasicIterator", function () {
 
     const result = await basicIterator.getSum();
     console.log(result);
+  });
+});
+
+describe("CreatorBalanceChecker", function () {
+  it("Test CreatorBalanceChecker", async function() {
+    const CreatorBalanceChecker = await ethers.getContractFactory("CreatorBalanceChecker");
+    const createbalancechecker = await CreatorBalanceChecker.deploy();
+
+    await createbalancechecker.deployed();
+    const result = await createbalancechecker.getCreatorBalance();
+    const result_dot = await createbalancechecker.getCreatorDotBalance();
+
+    console.log(result);
+    console.log(result_dot);
   });
 });
