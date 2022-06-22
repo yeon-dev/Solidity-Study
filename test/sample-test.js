@@ -19,3 +19,14 @@ describe("Greeter", function () {
     expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 });
+
+describe("BasicIterator", function () {
+  it("Test BasicIterator", async function() {
+    const BasicIterator = await ethers.getContractFactory("BasicIterator");
+    const basicIterator = await BasicIterator.deploy();
+    await basicIterator.deployed();
+
+    const result = await basicIterator.getSum();
+    console.log(result);
+  });
+});
